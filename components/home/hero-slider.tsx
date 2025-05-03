@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Link } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 
@@ -97,7 +97,9 @@ export default function HeroSlider({
                 {image.subtitle}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 animate-fadeIn animation-delay-500">
+                <Link to='/donate'>
                 <Button variant='donate' size="lg" className="rounded-full">Donate Now</Button>
+                </Link>
                 <Button size="lg" variant='default' className="rounded-full text-white border-white hover:bg-white hover:text-primary">
                   Learn More
                 </Button>
