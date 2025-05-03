@@ -97,9 +97,9 @@ export default function HeroSlider({
                 {image.subtitle}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 animate-fadeIn animation-delay-500">
-                <Link to='/donate'>
-                <Button variant='donate' size="lg" className="rounded-full">Donate Now</Button>
-                </Link>
+         
+                <Button variant='donate' size="lg" className="rounded-full" onClick={() => window.location.href = "/donate"}>Donate Now</Button>
+         
                 <Button size="lg" variant='default' className="rounded-full text-white border-white hover:bg-white hover:text-primary">
                   Learn More
                 </Button>
